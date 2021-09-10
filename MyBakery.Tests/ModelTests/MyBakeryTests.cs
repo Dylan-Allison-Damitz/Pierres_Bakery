@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using MyBakery;
 
-namespace ProjectName.Tests
+namespace MyBakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class MyBakeryTests
   {
     // Test methods go here
   }
