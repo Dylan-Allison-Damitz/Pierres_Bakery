@@ -17,6 +17,7 @@ namespace PierresBakery
         if (orderPastry == "1"){
           Console.WriteLine("Dinkin Flicka");
         }
+        //int inputNumber = Convert.ToInt32(Console.ReadLine()); idea for parsing?
     }
   }
 }
