@@ -13,7 +13,10 @@ namespace PierresBakery
         Console.WriteLine("-------------------------------------------------------------------------------------------");
         
         Console.WriteLine("Please enter the number of pastries you'd like to purchase:");
-  
+        string orderPastry = Console.ReadLine();
+        if (orderPastry == "1"){
+          Console.WriteLine("Dinkin Flicka");
+        }
     }
   }
 }
