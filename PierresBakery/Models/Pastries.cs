@@ -26,7 +26,6 @@ namespace PierresBakery.Models
 
                 return (overallOrder + noDeal);
             }
-
         }
     }
 }
