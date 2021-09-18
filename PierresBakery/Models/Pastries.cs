@@ -17,14 +17,18 @@ namespace PierresBakery.Models
             {
                 return pastriesAmount * pastriesCost;
             }
-            else
+            else if (pastriesAmount >= 3)
             {
-                int remainders = pastriesAmount % 3;
+                int remainders = (pastriesAmount % 3);
                 int orderPastries = (pastriesAmount - remainders);
                 int overallOrder = ((orderPastries / 3) * (5));
                 int noDeal = (remainders * pastriesAmount);
 
                 return (overallOrder + noDeal);
+            }
+            else
+            {
+                return 0;
             }
         }
     }

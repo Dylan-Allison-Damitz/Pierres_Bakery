@@ -17,5 +17,10 @@ namespace PierresBakery.Tests
             {
             Assert.AreEqual(5, Pastries.PastriesCalculator(2, 3));
             }
+        [TestMethod]
+            public void PastriesCalculator_SixPastriesCostTen_Int()
+            {
+            Assert.AreEqual(10, Pastries.PastriesCalculator(2, 6));
+            }
     }
 }
