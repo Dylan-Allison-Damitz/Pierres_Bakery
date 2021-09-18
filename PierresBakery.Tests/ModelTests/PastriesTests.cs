@@ -1,15 +1,15 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakery;
+using PierresBakery.Models;
 
-namespace MyBakery.Tests
+namespace PierresBakery.Tests
 {
     [TestClass]
     public class PastriesMethodTests
     {
-        [Test Method]
-        public void CalculatePastries_TwoPastriesCostsFour_int()
-        {
-            Assert.AreEqual(4, Pastries.PastriesCalculator(2,2));
-        }
+        [TestMethod]
+            public void PastriesCalculator_TwoPastriesCost_Int()
+            {
+            Assert.AreEqual(4, Pastries.PastriesCalculator(2, 2));
+            }
     }
 }

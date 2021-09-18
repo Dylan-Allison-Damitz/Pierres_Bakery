@@ -2,8 +2,8 @@ namespace PierresBakery.Models
 {
     public class Bread 
     {
-        public int BreadCost
-        public in BreadAmount
+        public int BreadCost { get; set; }
+        public int BreadAmount { get; set; }
         
         public Bread(int breadCost, int breadAmount)
         {

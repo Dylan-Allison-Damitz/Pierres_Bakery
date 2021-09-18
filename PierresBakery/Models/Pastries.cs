@@ -2,8 +2,8 @@ namespace PierresBakery.Models
 {
     public class Pastries 
     {
-        public int PastriesCost
-        public in PastriesAmount
+        public int PastriesCost { get; set; }
+        public int PastriesAmount { get; set; }
 
         public Pastries(int pastriesCost, int pastriesAmount)
         {
@@ -11,11 +11,16 @@ namespace PierresBakery.Models
             PastriesAmount = pastriesAmount;
         }
 
-        public static int PastriesCalculator(int pastriesCost, int pastriesAmount)
+        public static int PastriesCalculator(int pastriesCost, int pastriesAmount) 
         {
-            
-            // conditional here?
-            
+            if (pastriesAmount <= 2)
+            {
+                return pastriesAmount * pastriesCost;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }
