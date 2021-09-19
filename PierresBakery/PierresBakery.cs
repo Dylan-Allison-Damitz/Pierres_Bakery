@@ -14,10 +14,9 @@ namespace PierresBakery
         
         Console.WriteLine("Please enter the number of pastries you'd like to purchase:");
         string orderPastry = Console.ReadLine();
-        if (orderPastry == "1"){
-          Console.WriteLine();
+        int PastriesAmount = int.Parse(orderPastry);
+
         }
-        //int inputNumber = Convert.ToInt32(Console.ReadLine()); idea for parsing?
+
     }
   }
-}
