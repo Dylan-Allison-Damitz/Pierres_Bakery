@@ -4,14 +4,13 @@ using PierresBakery.Models;
 namespace PierresBakery.Tests
 {
     [TestClass]
-    public class PastriesMethodTests
+    public class PastriesCalculatorMethodTests
     {
         [TestMethod]
             public void PastriesCalculator_TwoPastriesCostFour_Int()
             {
             Assert.AreEqual(4, Pastries.PastriesCalculator(2, 2));
             }
-    
         [TestMethod]
             public void PastriesCalculator_ThreePastriesCostFive_Int()
             {
