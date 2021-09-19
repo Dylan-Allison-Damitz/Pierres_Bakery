@@ -20,8 +20,6 @@ namespace PierresBakery.Models
                 int orderBread = (breadAmount - remainder);
                 int overallOrder = (((orderBread / 3) * 2) * breadCost);
                 
-                
-
                 return (overallOrder + noDeal);
             }
             else 
