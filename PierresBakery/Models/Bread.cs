@@ -16,11 +16,13 @@ namespace PierresBakery.Models
             if (breadAmount >= 2)
             {
                 int remainder = (breadAmount % 3);
-                int orderBread = (breadAmount - remainder);
-                int overallOrder = (((orderBread /3) * 2) * breadCost);
                 int noDeal = (remainder * breadCost);
+                int orderBread = (breadAmount - remainder);
+                int overallOrder = (((orderBread / 3) * 2) * breadCost);
+                
+                
 
-                return (noDeal + overallOrder);
+                return (overallOrder + noDeal);
             }
             else 
             {
