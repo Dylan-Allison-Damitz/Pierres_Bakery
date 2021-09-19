@@ -16,5 +16,10 @@ namespace PierresBakery.Tests
           {
           Assert.AreEqual(10, Bread.BreadCalculator(5, 2));
           }
+      [TestMethod]
+          public void BreadCalculator_ThreeBreadCostTen_Int()
+          {
+          Assert.AreEqual(10, Bread.BreadCalculator(5, 3));
+          }
   }
 }
